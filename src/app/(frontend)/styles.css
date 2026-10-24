@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  --color-action: #ce202e;
+  --color-action-hover: color-mix(in srgb, #ce202e 78%, #231f20);
+  --color-action-foreground: white;
+  --color-brand-accent: #ffce04;
+  --color-brand-red: #ce202e;
+
+  --color-blue-50: color-mix(in srgb, #0076bb 8%, white);
+  --color-blue-100: color-mix(in srgb, #0076bb 16%, white);
+  --color-blue-200: color-mix(in srgb, #0076bb 28%, white);
+  --color-blue-300: color-mix(in srgb, #0076bb 45%, white);
+  --color-blue-400: color-mix(in srgb, #0076bb 72%, white);
+  --color-blue-500: #0076bb;
+  --color-blue-600: #0076bb;
+  --color-blue-700: color-mix(in srgb, #0076bb 84%, #231f20);
+  --color-blue-800: color-mix(in srgb, #0076bb 68%, #231f20);
+  --color-blue-950: #231f20;
+
+  --color-slate-50: color-mix(in srgb, #6d6e71 7%, white);
+  --color-slate-100: color-mix(in srgb, #6d6e71 13%, white);
+  --color-slate-200: color-mix(in srgb, #6d6e71 24%, white);
+  --color-slate-300: color-mix(in srgb, #6d6e71 40%, white);
+  --color-slate-400: color-mix(in srgb, #6d6e71 70%, white);
+  --color-slate-500: #6d6e71;
+  --color-slate-600: color-mix(in srgb, #6d6e71 88%, #231f20);
+  --color-slate-700: color-mix(in srgb, #6d6e71 65%, #231f20);
+  --color-slate-800: color-mix(in srgb, #6d6e71 35%, #231f20);
+  --color-slate-900: #231f20;
+  --color-slate-950: #231f20;
+
+  --color-amber-100: color-mix(in srgb, #ffce04 28%, white);
+  --color-amber-800: #231f20;
+  --color-emerald-100: color-mix(in srgb, #0076bb 16%, white);
+  --color-emerald-700: #0076bb;
+  --color-red-50: color-mix(in srgb, #ce202e 8%, white);
+  --color-red-700: #ce202e;
+}
+
+html { scroll-behavior: smooth; }
+body { font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif; }
+button, a, input, select, textarea { outline-color: var(--color-blue-500); }
+::selection { background: #ffce04; color: #231f20; }
+
+.figma-custom-code-fragment {
+  display: contents;
+}
+
+.figma-bypass-link {
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  z-index: 2147483647;
+  transform: translateY(-150%);
+  border-radius: 6px;
+  background: #231f20;
+  color: #fff;
+  padding: 8px 12px;
+  font: 600 14px/1.2 system-ui, sans-serif;
+  text-decoration: none;
+}
+
+.figma-bypass-link:focus {
+  transform: translateY(0);
+}
